@@ -134,3 +134,48 @@ input {
     outline: none; 
     flex: 1;
 }
+
+/* ------------------------------------------------------------
+   Mobile Adaptation - 针对手机端的显示优化
+   ------------------------------------------------------------ */
+@media (max-width: 768px) {
+    #terminal {
+        padding: 20px;       /* 缩小外边距 */
+        width: 100vw;        /* 手机端占满全宽 */
+        height: 100vh;
+        border: none;        /* 移除边框节省空间 */
+    }
+
+    /* 调小字号，防止长单词导致换行错乱 */
+    .output, #boot { 
+        font-size: 1.1rem; 
+        gap: 6px;
+    }
+
+    .prompt, .file-header { 
+        font-size: 1.2rem; 
+    }
+
+    /* 档案内容容器：缩减边距，防止文字太挤 */
+    .file-container {
+        padding: 20px 25px; 
+    }
+
+    .lang-en {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .lang-zh {
+        font-size: 1.1rem;
+    }
+
+    input {
+        font-size: 1.2rem;
+    }
+
+    /* 隐藏 CRT 特效，防止手机性能不足导致卡顿 */
+    body::after {
+        display: none;
+    }
+}
