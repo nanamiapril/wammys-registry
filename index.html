@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wammy's Registry - Index 0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="terminal">
+    <div class="output" id="boot">
+        [SYSTEM] Wammy's House Central Server v4.0.5... Connected.<br>
+        <br>
+        [AUTH] User: L_Lawliet<br>
+        <br>
+        <span class="system-warn">
+        [WARNING!!!] BIOMETRIC_SIGNAL_LOST.<br>
+        <br>
+        If you are reading this,<br>
+        I am already dead.<br>
+        <br>
+        >> Decrypting 'Legacy' archive for the successor...<br>
+        <br>
+        [INFO] Type 'ls' to list folders or 'help' for guidance.<br>
+        <br>
+        -----------------------------------------------------------
+    </div>
+    <div id="history"></div>
+    <div class="input-area">
+        <span class="prompt">L_System:\></span>
+        <input type="text" id="cmdInput" autofocus spellcheck="false" autocomplete="off">
+    </div>
+</div>
+
+<script src="db/drafts.js"></script>
+<script src="db/logs.js"></script>
+<script src="db/analysis.js"></script>
+<script src="db/philosophy.js"></script>
+
+<script>
+    // 整合所有数据库
+    const Global_DB = {
+        'Drafts': typeof DB_Drafts !== 'undefined' ? DB_Drafts : [],
+        'Logs': typeof DB_Logs !== 'undefined' ? DB_Logs : [],
+        'Analysis': typeof DB_Analysis !== 'undefined' ? DB_Analysis : [],
+        'Philosophy': typeof DB_Philosophy !== 'undefined' ? DB_Philosophy : []
+    };
+
+    const history = document.getElementById('history');
+    const input = document.getElementById('cmdInput');
+
+    // 核心交互逻辑
+    input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            const val = this.value.trim();
+            if (val === "") return;
+
+            const [cmd, ...args] = val.split(' ');
+            const arg = args.join(' ');
+            
+            // 打印当前输入的命令行
+            const cmdLine = document.createElement('div');
+            cmdLine.className = 'output command-line';
+            cmdLine.innerHTML = `<span class="prompt">L_System:\\></span> ${val}`;
+            history.appendChild(cmdLine);
+
+            handleCommand(cmd.toLowerCase(), arg);
+            
+            this.value = '';
+            scrollTerminal();
+        }
+    });
+
+    // 指令处理器
+    function handleCommand(cmd, arg) {
+        if (cmd === 'help') {
+            printNormal("Available commands:\n- ls: List all main directories\n- cd [folder]: Enter a directory\n- read [ID]: Access a specific file\n- clear: Reset terminal screen");
+        } 
+        else if (cmd === 'ls') {
+            printNormal("Directories found:\n/Drafts\n/Logs\n/Analysis\n/Philosophy");
+        } 
+        else if (cmd === 'cd') {
+            if (!arg) return printWarn("Usage: cd [Folder_Name]");
+            const folderName = arg.charAt(0).toUpperCase() + arg.slice(1).toLowerCase();
+            const db = Global_DB[folderName];
+            if (db) {
+                let list = `Directory: /${folderName}\n`;
+                db.forEach(f => list += `> [ID: ${f.id}] ${f.title}\n`);
+                printNormal(list);
+            } else {
+                printWarn(`Error: Directory '${arg}' not found.`);
+            }
+        } 
+        else if (cmd === 'read') {
+            if (!arg) return printWarn("Usage: read [ID]");
+            let entry = null;
+            for (let key in Global_DB) {
+                entry = Global_DB[key].find(f => f.id === arg.toUpperCase());
+                if (entry) break;
+            }
+            
+            if (entry) {
+                printBilingual(entry);
+            } else {
+                printWarn(`Error: File ID '${arg}' not recognized or encrypted.`);
+            }
+        } 
+        else if (cmd === 'clear') {
+            history.innerHTML = '';
+        } 
+        else if (cmd === 'kira') {
+            printWarn("FATAL ERROR: ACCESS DENIED. SYSTEM LOCKED BY RULE 13.");
+        }
+        else {
+            printNormal(`Unknown command: ${cmd}`);
+        }
+    }
+
+    // --- 工具函数 ---
+
+    function scrollTerminal() {
+        const term = document.getElementById('terminal');
+        term.scrollTop = term.scrollHeight;
+    }
+
+    function printNormal(text) {
+        const div = document.createElement('div');
+        div.className = 'output';
+        div.innerText = text;
+        history.appendChild(div);
+        scrollTerminal();
+    }
+
+    function printWarn(text) {
+        const div = document.createElement('div');
+        div.className = 'output system-warn';
+        div.innerText = text;
+        history.appendChild(div);
+        scrollTerminal();
+    }
+
+    // --- 打字机动效逻辑 ---
+
+    async function typeWriter(element, text, speed) {
+        // 将文本按换行符分割，处理真实换行
+        const lines = text.split('\n');
+        for (let j = 0; j < lines.length; j++) {
+            const line = lines[j];
+            for (let i = 0; i < line.length; i++) {
+                element.innerHTML += line.charAt(i);
+                scrollTerminal();
+                await new Promise(res => setTimeout(res, speed));
+            }
+            if (j < lines.length - 1) {
+                element.innerHTML += "<br>"; // 英文部分换行
+            }
+        }
+    }
+
+    async function typeWriterZh(element, text, speed) {
+        const lines = text.split('\n');
+        for (let j = 0; j < lines.length; j++) {
+            const line = lines[j];
+            // 中文每一行前自动补上注释符 //
+            element.innerHTML += "// ";
+            for (let i = 0; i < line.length; i++) {
+                element.innerHTML += line.charAt(i);
+                scrollTerminal();
+                await new Promise(res => setTimeout(res, speed));
+            }
+            if (j < lines.length - 1) {
+                element.innerHTML += "<br>"; 
+            }
+        }
+    }
+
+   
+    async function printBilingual(entry) {
+        // 打字期间禁用输入，增强仪式感
+        input.disabled = true;
+        input.placeholder = "SYSTEM DECRYPTING...";
+
+        const container = document.createElement('div');
+        container.className = 'output';
+        container.innerHTML = `
+            <div class="file-header">[DECRYPTING FILE]: ${entry.path}</div>
+            <div class="file-container">
+                <span class="lang-en" id="en-${entry.id}"></span>
+                <span class="lang-zh" id="zh-${entry.id}"></span>
+            </div>
+        `;
+        history.appendChild(container);
+
+        const enSpan = document.getElementById(`en-${entry.id}`);
+        const zhSpan = document.getElementById(`zh-${entry.id}`);
+
+        // 执行打字机序列
+        await typeWriter(enSpan, entry.content_en, 15); 
+        await new Promise(res => setTimeout(res, 500)); // 停顿一下
+        await typeWriterZh(zhSpan, entry.content_zh, 30);
+
+        // 恢复输入
+        input.disabled = false;
+        input.placeholder = "";
+        input.focus();
+        scrollTerminal();
+    }
+</script>
+</body>
+</html>

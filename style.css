@@ -1,0 +1,136 @@
+/* ============================================================
+   Wammy's Registry UI - Version 5.3.2 (Final Visual Fix)
+   Focus: Warning Recall, Centered Container, Left-Aligned Text
+   ============================================================ */
+
+/* 1. 基础背景：控制整个屏幕的居中逻辑 */
+body {
+    background-color: #050505;
+    color: #d1d1d1;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    display: flex;          /* 恢复居中，保证黑色终端框在屏幕正中 */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(circle, #1a1a1a 0%, #050505 100%);
+}
+
+/* 2. 终端主容器：控制黑色框的大小和边距 */
+#terminal {
+    position: relative;
+    width: 95vw;
+    max-width: 1200px;     /* 适配宽屏，防止文字拉得太长 */
+    height: 90vh;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.98);
+    border: 1px solid #333;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+#terminal::-webkit-scrollbar { display: none; }
+
+/* 3. 系统输出层：控制内部文字严格左对齐 */
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 内部元素靠左站好 */
+    text-align: left;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;       /* 确保所有系统信息足够大 */
+    font-weight: 700;
+}
+
+/* 4. 关键修复：血红色警告样式 */
+.system-warn {
+    color: #ff4444 !important; /* 强制血红色，覆盖任何全局白色 */
+    text-shadow: 0 0 15px rgba(255, 68, 68, 0.7);
+    font-weight: 900 !important;
+    font-size: 1.6rem;
+}
+
+/* 5. 欢迎界面适配 */
+#boot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+/* 6. 命令行：解决提示符与指令换行问题 */
+.command-line {
+    display: flex !important;
+    flex-direction: row !important; /* 强制横向排列 */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.command-line .prompt {
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+/* 7. 系统提示符与文件头：亮绿色 */
+.prompt, .file-header {
+    color: #00ff41 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+    font-weight: 900;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+/* 8. 档案显示区域：美学边距与紫色边框 */
+.file-container {
+    align-self: stretch; /* 撑满内部宽度 */
+    margin: 10px 0 !important; 
+    padding: 35px 50px;  /* 解决文字贴边问题 */
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 6px solid #bf00ff;
+    border-radius: 0 4px 4px 0;
+}
+
+.lang-en {
+    display: block;
+    font-size: 1.6rem; 
+    color: #ffffff;
+    font-weight: 900; 
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.lang-zh {
+    display: block;
+    font-size: 1.5rem; 
+    color: #bf00ff;    
+    font-weight: 900;
+    line-height: 1.8;
+}
+
+/* 9. 底部实时输入区域 */
+.input-area { 
+    display: flex; 
+    align-items: center; 
+    margin-top: 25px;
+    border-top: 2px solid #222;
+    padding-top: 25px;
+}
+
+input {
+    background: transparent; 
+    border: none; 
+    color: #00ff41; 
+    font-family: inherit; 
+    font-size: 1.7rem; 
+    font-weight: 900;
+    outline: none; 
+    flex: 1;
+}
