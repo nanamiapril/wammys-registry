@@ -139,6 +139,15 @@ input {
    移动端响应式终极补丁 (针对手机屏幕优化)
    ============================================================ */
 @media (max-width: 768px) {
+    /* 1. 欢迎界面：字号再缩小一级，增加行高，提升精致感 */
+    #boot {
+        font-size: 0.95rem;      /* 进一步缩小到 0.95 */
+        line-height: 1.4;        /* 略微紧凑但清晰 */
+        margin-bottom: 15px;     /* 缩小欢迎区与下方的间距 */
+       opacity: 0.8; /* 建议：让过往的启动日志稍微暗一点，突出下方的当前指令 */
+    }
+
+   
     /* 1. 基础布局调整：防止键盘弹起遮挡，容器从顶部对齐 */
     body {
         padding: 10px;
@@ -156,8 +165,8 @@ input {
 
     /* 3. 系统输出层：下调字号，解决截图中的挤压感 */
     .output {
-        font-size: 1.1rem; /* 从 1.5rem 降级，适配小屏 */
-        gap: 6px;
+        font-size: 1.05rem; /* 从 1.5rem 降级，适配小屏 */
+        gap: 4px;
         margin-bottom: 20px;
         word-wrap: break-word; /* 补充：强制长单词换行 */
         overflow-wrap: break-word;
@@ -198,7 +207,8 @@ input {
 
     /* 8. 红色警告样式：保持血红色醒目度 */
     .system-warn {
-        font-size: 1.15rem;
+        font-size: 1.0rem !important; /* 维持稍微突出一点点 */
+        text-shadow: 0 0 8px rgba(255, 68, 68, 0.6); /* 减小发光半径，防止在小屏幕上发糊 */
     }
 
     /* 9. 输入区域：优化键盘交互 */
