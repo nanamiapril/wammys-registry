@@ -9,8 +9,8 @@ const DB_Analysis = [
         category: "Analysis",
         title: "The Paradox of the New World",
         path: "/Analysis/Subject_K/New_World_Paradox.bin",
-        content_en: "Hypothesis: If Light Yagami succeeds in eliminating all 'evil,' the definition of evil will inevitably expand to include those who disagree with him. The 'New World' is not a utopia; it is a stagnant pond where the only movement is the reflection of his own ego. Statistically, a world governed by a single will eventually collapses under its own rigidity. He isn't saving humanity; he is suffocating it in a vacuum of forced morality. Justice requires friction; Light only offers the silence of the grave.",
-        content_zh: "假设：如果夜神月成功消灭了所有“恶”，那么“恶”的定义必然会扩大到包括那些反对他的人。所谓“新世界”绝非乌托邦，而是一潭死水，其中唯一的波动只是他自我意识的倒影。从统计学上看，由单一意志统治的世界最终会因其僵化而崩塌。他不是在拯救人类，而是在强迫性的道德真空里窒息人类。正义需要摩擦与碰撞，而月提供的只有坟墓般的寂静。"
+        content_en: "Hypothesis: If Kira succeeds in eliminating all 'evil,' the definition of evil will inevitably expand to include those who disagree with him. The 'New World' is not a utopia; it is a stagnant pond where the only movement is the reflection of his own ego. Statistically, a world governed by a single will eventually collapses under its own rigidity. He isn't saving humanity; he is suffocating it in a vacuum of forced morality. Justice requires friction; Light only offers the silence of the grave.",
+        content_zh: "假设：如果基拉成功消灭了所有“恶”，那么“恶”的定义必然会扩大到包括那些反对他的人。所谓“新世界”绝非乌托邦，而是一潭死水，其中唯一的波动只是他自我意识的倒影。从统计学上看，由单一意志统治的世界最终会因其僵化而崩塌。他不是在拯救人类，而是在强迫性的道德真空里窒息人类。正义需要摩擦与碰撞，而月提供的只有坟墓般的寂静。"
     },
     {
         id: "A-202",
