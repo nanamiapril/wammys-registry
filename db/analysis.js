@@ -9,32 +9,32 @@ const DB_Analysis = [
         category: "Analysis",
         title: "The Paradox of the New World",
         path: "/Analysis/Subject_K/New_World_Paradox.bin",
-        content_en: "Hypothesis: If Kira succeeds in eliminating all 'evil,' the definition of evil will inevitably expand to include those who disagree with him. The 'New World' is not a utopia; it is a stagnant pond where the only movement is the reflection of his own ego. Statistically, a world governed by a single will eventually collapses under its own rigidity. He isn't saving humanity; he is suffocating it in a vacuum of forced morality. Justice requires friction; Light only offers the silence of the grave.",
-        content_zh: "假设：如果基拉成功消灭了所有“恶”，那么“恶”的定义必然会扩大到包括那些反对他的人。所谓“新世界”绝非乌托邦，而是一潭死水，其中唯一的波动只是他自我意识的倒影。从统计学上看，由单一意志统治的世界最终会因其僵化而崩塌。他不是在拯救人类，而是在强迫性的道德真空里窒息人类。正义需要摩擦与碰撞，而月提供的只有坟墓般的寂静。"
+        content_en: "Hypothesis: If Kira succeeds in filtering out all 'negative variables,' the definition of negativity will inevitably expand to include those who deviate from the system. The 'New World' is not an ultimate design; it is a stagnant mirror reflecting nothing but a single ego. Dynamically, a framework governed by an absolute will eventually collapses under its own structural rigidity. This is not the salvation of humanity, but a confinement within a vacuum of enforced synchronization. True alignment requires resonance and friction; the absolute will only offers the silence of a deleted sequence.",
+        content_zh: "假设：如果Kira成功清除了所有“负面变量”，那么“负面”的定义必然会扩大到包括那些偏离系统的人。所谓“新世界”绝非终极形态，而是一面死水般的镜子，其中唯一的波动只是他膨胀自我的倒影。从动态架构上看，由绝对意志统治的框架最终会因其结构僵化而崩塌。这并非对人类的拯救，而是在强迫性同步的真空中对个性的禁锢。真正的秩序需要共鸣与摩擦，而绝对意志带来的只有代码被抹除后的死寂。"
     },
     {
         id: "A-202",
         category: "Analysis",
         title: "The Deification Process",
         path: "/Analysis/Subject_K/God_Complex_Study.log",
-        content_en: "Subject K (Kira) exhibits symptoms of an escalating God Complex. He no longer sees himself as a judge, but as the law itself. This is his greatest strategic weakness. When a man begins to believe his own myth, he stops accounting for the 'human error' that once made him dangerous. He has forgotten that even a god needs worshippers to remain relevant. I am not fighting a killer; I am fighting a man who is actively deleting his own humanity to fit into a fictional throne.",
-        content_zh: "目标 K（基拉）表现出不断升级的“救世主情结”。他不再视自己为法官，而是法律本身。这是他最大的战略弱点。当一个人开始相信自己的神话时，他就会停止考虑那些曾让他变得危险的“人为误差”。他忘了，即使是神也需要信徒的环绕。我对抗的不是一名杀手，而是一个正而积极删除自身人性，以挤进那座虚构王座的凡人。"
+        content_en: "Kira exhibits symptoms of an escalating God Complex. He no longer sees himself as a judge, but as the law itself. This is his greatest strategic weakness. When a man begins to believe his own myth, he stops accounting for the 'human error' that once made him dangerous. He has forgotten that even a god needs worshippers to remain relevant. I am not fighting a killer; I am fighting a man who is actively deleting his own humanity to fit into a fictional throne.",
+        content_zh: "基拉表现出不断升级的“救世主情结”。他不再视自己为法官，而是法律本身。这是他最大的战略弱点。当一个人开始相信自己的神话时，他就会停止考虑那些曾让他变得危险的“人为误差”。他忘了，即使是神也需要信徒的环绕。我对抗的不是一名杀手，而是一个正而积极删除自身人性，以挤进那座虚构王座的凡人。"
     },
     {
         id: "A-203",
         category: "Analysis",
         title: "The Sacrifice of Misa Amane",
         path: "/Analysis/Subject_K/Collateral_Damage.txt",
-        content_en: "The inclusion of Misa Amane into his orbit was not an emotional decision, but a tactical acquisition of an asset. Subject K views human affection as a series of levers to be pulled. It is efficient, yes, but it reveals a profound emptiness in his tactical core. If he cannot feel the weight of a life dedicated to him, he cannot understand the nature of the people he claims to rule. He is building a kingdom on a foundation of discarded hearts. Eventually, the foundation will crack.",
-        content_zh: "将弥海砂纳入他的轨道并非情感决策，而是战术性的资产收购。目标 K 将人类的情感视为一系列待拨动的杠杆。这固然高效，却揭示了他战术核心中深邃的空虚。如果他感受不到那份全身心奉献给他的生命的重量，他就永远无法理解他声称要统治的人民的本性。他在用被丢弃的心脏建造王国，而地基终会开裂。"
+        content_en: "The inclusion of Misa Amane into his orbit was not an emotional decision, but a tactical acquisition of an asset. Kira views human affection as a series of levers to be pulled. It is efficient, yes, but it reveals a profound emptiness in his tactical core. If he cannot feel the weight of a life dedicated to him, he cannot understand the nature of the people he claims to rule. He is building a kingdom on a foundation of discarded hearts. Eventually, the foundation will crack.",
+        content_zh: "将弥海砂纳入他的轨道并非情感决策，而是战术性的资产收购。基拉将人类的情感视为一系列待拨动的杠杆。这固然高效，却揭示了他战术核心中深邃的空虚。如果他感受不到那份全身心奉献给他的生命的重量，他就永远无法理解他声称要统治的人民的本性。他在用被丢弃的心脏建造王国，而地基终会开裂。"
     },
     {
         id: "A-204",
         category: "Analysis",
         title: "Probability of Relapse",
         path: "/Analysis/Subject_K/Future_Forecasting.bin",
-        content_en: "Even if Kira wins today, the survival rate of the human spirit under his regime drops to near zero within two generations. Without the freedom to fail, humanity ceases to evolve. Light Yagami's justice is a 'frozen snapshot'—a moment of perfection that forbids the future. I have calculated 1,000 simulations of his 'New World.' In every single one, the end result is not peace, but a total, silent extinction of the will. Between his order and our chaos, chaos is the only one with a heartbeat.",
-        content_zh: "即使基拉赢了今天，人类精神在他的政权下的存活率在两代人之内也会降至近乎为零。失去了犯错的自由，人类便停止了进化。夜神月的正义是一张“冰冷的快照”——一个禁止未来的完美瞬间。我对他“新世界”进行了 1000 次模拟，结果无一例外：最终产物不是和平，而是意志的彻底灭绝。在他的秩序与我们的混沌之间，只有混沌尚存心跳。"
+        content_en: "Even if Kira wins today, the survival rate of the human spirit under his regime drops to near zero within two generations. Without the freedom to fail, humanity ceases to evolve. Kira's justice is a 'frozen snapshot'—a moment of perfection that forbids the future. I have calculated 1,000 simulations of his 'New World.' In every single one, the end result is not peace, but a total, silent extinction of the will. Between his order and our chaos, chaos is the only one with a heartbeat.",
+        content_zh: "即使基拉赢了今天，人类精神在他的政权下的存活率在两代人之内也会降至近乎为零。失去了犯错的自由，人类便停止了进化。基拉的正义是一张“冰冷的快照”——一个禁止未来的完美瞬间。我对他“新世界”进行了 1000 次模拟，结果无一例外：最终产物不是和平，而是意志的彻底灭绝。在他的秩序与我们的混沌之间，只有混沌尚存心跳。"
     },
     {
         id: "A-205",
