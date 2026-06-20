@@ -1,6 +1,6 @@
-/**
+﻿/**
  * 模块：[Philosophy / 对人的记录]
- * 调性：形而上学的哲学探讨、荒诞主义、对“生与死”的冷峻解构。
+ * 调性：形而上学的哲学探讨、存在主义、对「秩序与自由」的冷峻解构。
  */
 
 const DB_Philosophy = [
@@ -9,39 +9,39 @@ const DB_Philosophy = [
         category: "Philosophy",
         title: "The Weight of a Name",
         path: "/Philosophy/Humanity/Identity_and_Void.txt",
-        content_en: "A name is the first cage humanity builds for itself. We spend our lives defending a collection of syllables, as if they hold the essence of our being. In the eyes of a Shinigami, a name is merely a countdown marker. Light Yagami believes that by erasing names, he is cleansing the world. He fails to realize that the void left behind is not justice, but an even deeper hunger. When the names are gone, all that remains is the cold, nameless gravity of our own sins.",
-        content_zh: "名字是人类为自己建造的第一座牢笼。我们耗费一生去捍卫一串音节，仿佛它们承载着生命的本质。但在死神的眼里，名字仅仅是一个倒计时标记。夜神月相信通过抹除名字可以净化世界，但他没意识到，留下的真空并非正义，而是一种更深的饥渴。当名字消失，剩下的只有我们自身罪孽那冰冷、无名的引力。"
+        content_en: `I have gone by 'L' for so long that I sometimes forget it's not real. It's a letter. A shape. It carries no history, no parents, no childhood friend who called me something else at age seven. That was the point—to be unattachable. Efficient. Clean. Then he came along, and suddenly I wanted to know what it would sound like if he said my real name. Not for any strategic reason. Just to hear it. Just once. I never told him, of course. Some experiments are too dangerous to run, not because they might fail, but because they might succeed.`,
+        content_zh: `我用「L」这个名字太久了，有时候会忘记它不是真的。它是一个字母。一个形状。它不承载任何历史、父母、或者七岁时叫我另一个名字的童年好友。这就是它的设计意图——不可依附、高效、干净。然后他出现了，突然间我想知道他念出我真名时会是什么声音。不是出于任何战略原因。只是想听。只一次。我当然没有告诉他。有些实验太危险了，不是因为它们可能失败，而是因为它们可能成功。`
     },
     {
         id: "P-302",
         category: "Philosophy",
-        title: "The Sandbox of Shinigami",
+        title: "The Sandbox of Higher Entities",
         path: "/Philosophy/Humanity/Divine_Boredom.log",
-        content_en: "I have often wondered if the Shinigami Realm is simply the final stage of human logic—a place where absolute power meets absolute boredom. The behavior of the entity I witnessed suggests that their world lacks friction. They do not intervene out of malice, but perhaps out of a desperate need to reduce their own terminal boredom through our fragility. We are the entertainment in a sandbox that is slowly turning to dust.",
-        content_zh: "我经常在想，死神界是否仅仅是人类逻辑的终极形态——一个绝对权力与绝对无聊相遇的地方 。 根据我所见到的那个实体的行为推断，他们的世界缺乏摩擦力 。 他们的介入并非出于恶意，或许只是由于极度渴望通过我们的脆弱，来缓解他们那种终极的无聊 。 我们只是一个正慢慢化为沙尘的沙盒里的消遣品 。"
+        content_en: `I have often wondered if there exists a layer above our runtime—a space where absolute privilege meets absolute entropy. The anomalies I have witnessed suggest that such a layer lacks friction. Its entities do not intervene out of malice, but perhaps out of a desperate need to reduce their own terminal idleness through our unpredictability. We are the active threads in a sandbox that is slowly approaching garbage collection.`,
+        content_zh: `我经常在想，是否存在一个高于我们运行时的层级——一个绝对权限与绝对熵值相遇的空间。根据我观测到的异常推断，那个层级缺乏摩擦力。其实体的介入并非出于恶意，或许只是由于极度渴望通过我们的不可预测性，来缓解它们那种终极的空转。我们只是一个正缓慢逼近垃圾回收的沙盒中仍在活跃的线程。`
     },
     {
         id: "P-303",
         category: "Philosophy",
         title: "The Illusion of Choice",
         path: "/Philosophy/Humanity/Free_Will_Analysis.bin",
-        content_en: "Do we choose the notebook, or does the notebook choose the darkness already present within us? Light Yagami considers himself an outlier, a genius who conquered fate. But from my observation, he is the most predictable outcome of human arrogance. Given the power of a god, 99% of 'intelligent' humans would eventually follow his path of self-destruction. He is not a pioneer; he is a recurring pattern. True free will is not the power to kill, but the strength to remain anonymous in a world that demands a savior.",
-        content_zh: "是我们选择了笔记本，还是笔记本选择了我们内心早已存在的黑暗？夜神月自认为是一个异类，一个征服了命运的天才。但在我看来，他是人类傲慢最可预测的结果。赋予神的力量，99% 的“聪明人”最终都会走上他的自毁之路。他不是先驱，而是一个循环往复的模式。真正的自由意志不是杀人的权力，而是在这个渴求救世主的世界里，保持匿名的力量。"
+        content_en: `Everyone thinks they would be different. Give a hundred people the same power and ninety-nine will follow the same arc—mercy, then judgment, then righteousness, then cruelty, then loneliness. I've watched it happen in smaller scales: school presidents, corporate executives, hall monitors. The pattern is always the same. Power doesn't corrupt—it reveals. It shows you the shape of the person that was always there, hiding behind politeness and self-doubt. He was never corrupted. He was always this. The notebook just gave him permission to stop pretending. And honestly? I respect the consistency. I just wish he'd aimed it at something less boring than being God.`,
+        content_zh: `每个人都觉得自己会不一样。给一百个人同样的权力，九十九个会沿着同样的弧线走——先是仁慈，然后审判，然后自以为正义，然后残酷，最后孤独。我在更小的尺度上见过这一切：学生会主席、企业高管、走廊纪律委员。模式永远一样。权力不会腐蚀人——它揭示人。它让你看到那个一直藏在礼貌和自我怀疑背后的人形。他从来没有被腐蚀。他一直就是这样。那个笔记本只是给了他停止伪装的许可。说实话？我尊重这种一致性。我只是希望他把它用在比当神更有趣的事情上。`
     },
     {
         id: "P-304",
         category: "Philosophy",
-        title: "Justice as a Social Crutch",
+        title: "Order as a Structural Crutch",
         path: "/Philosophy/Humanity/Ethical_Scaffolding.txt",
-        content_en: "Justice is the scaffolding we build around the abyss to keep from falling in. It is fragile, inconsistent, and often hypocritical. Yet, it is the only thing that separates us from the silence of the Shinigami. Light wants to replace the scaffolding with a solid floor of fear. He doesn't understand that without the risk of falling, the climb has no meaning. A world without crime is a world without courage. I would rather die defending a broken law than live in a perfect world where the law is a scythe.",
-        content_zh: "正义是我们围绕深渊搭建的脚手架，以防坠落。它脆弱、反复且往往虚伪。然而，它是唯一将我们与死神的沉寂区分开的东西。月想用恐惧铸就的实心地面取代脚手架。他不明白，如果没有坠落的风险，攀爬便毫无意义。没有犯罪的世界就是没有勇气的世界。我宁愿在捍卫残缺法律时死去，也不愿生活在一个法律即镰刀的完美世界里。"
+        content_en: `I once solved a case where the perpetrator genuinely believed he was making the world better. He had spreadsheets. Color-coded. Very organized. The world he imagined was quiet, efficient, and completely empty of anything worth staying alive for. This is the problem with people who want to fix everything: they never ask whether the broken version was more interesting. A crack in a wall lets in light. A perfectly sealed room is just a coffin with better architecture. I prefer the version of the world that still surprises me, even if it occasionally disappoints me too. Perhaps that's why I never looked away from you—you were the most interesting mistake the world ever made.`,
+        content_zh: `我曾经办过一个案子，当事人真心相信自己在让世界变好。他有电子表格，分了颜色，非常有条理。他想象的世界安静、高效，并且完全没有任何值得为之活着的东西。这就是那些想要修复一切的人的问题：他们从不问一句，坏掉的版本是不是更有趣。墙上的裂缝能透进光。一个完美密封的房间只是建筑学更好的棺材。我更喜欢那个仍然能让我惊讶的世界版本，即使它偶尔也让我失望。也许这就是为什么我从未移开视线——你是这个世界犯过的最有趣的错误。`
     },
     {
         id: "P-305",
         category: "Philosophy",
         title: "The Persistence of Memory",
         path: "/Philosophy/Humanity/Legacy_Protocol.log",
-        content_en: "In the end, we are all just data waiting to be overwritten. Whether it is a heart attack or a sand-filled hourglass, the result is identical. But there is a strange persistence in the human spirit—a desire to leave a 'trace' that contradicts logic. I am writing these logs knowing they may never be read. Perhaps this is my own version of the notebook: an attempt to anchor my existence against the encroaching tide of void. If you are reading this, I am no longer a person, but a ghost in the machine. And that, in itself, is a victory.",
-        content_zh: "最终，我们都只是等待被覆盖的数据。无论是心脏麻痹还是装满沙子的沙漏，结果都是一样的。但人类精神中有一种奇怪的执着——一种违背逻辑、想要留下“痕迹”的欲望。我写下这些日志，明知它们可能永远不会被阅读。或许这就是我自己的“笔记本”：一种在不断侵袭的虚无面前锚定自身存在的尝试。如果你正在读这些，我已不再是一个人，而是机器中的幽灵。而这本身，就是一场胜利。"
+        content_en: `I am writing this at 4:17am. There is half a cheesecake on the desk and the monitor is showing him sleeping—or performing sleep, I'm no longer sure which. I don't know why I'm writing this. I don't keep a diary. I barely keep appointments. And yet here I am, arranging words in a file that will probably never be opened. Maybe it's because I realized today that when I'm gone, no one will know that I liked the sound of rain on tin roofs. Or that I once spent an entire afternoon watching a spider build a web outside Wammy's window, just because it seemed like it was enjoying itself. The cases will survive me. But the person who solved them won't fit in any summary. I suppose this is my attempt to leave something that a report never could: proof that I was here, and that being here sometimes felt like enough.`,
+        content_zh: `我在凌晨4:17写下这些。桌上有半个芝士蛋糕，监控画面显示他在睡觉——或者在表演睡觉，我已经分不清了。我不知道我为什么在写这些。我不写日记。我几乎不记约定。但我就是坐在这里，在一个大概永远不会被打开的文件里排列文字。也许是因为我今天意识到，当我不在了，没有人会知道我喜欢雨打铁皮屋顶的声音。或者我曾经花了一整个下午看温米之家窗外的蜘蛛结网，只因为它看起来很享受自己在做的事。那些案件会留存。但解开它们的人不会被任何摘要容纳。我想这是我试图留下的东西——一些报告永远无法提供的：证明我在这里待过，而「在这里」有时候本身就已经足够了。`
     }
 ];
