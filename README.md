@@ -1,42 +1,66 @@
-📂 Wammy's House Central Server - L_Legacy System
+# L_System — Wammy's Registry
 
-    "If you are reading this, I am already dead."
+> If you are reading this, I am already dead.
 
-这是一个基于 Web 的模拟终端界面，旨在重现 L (Lawliet) 留给继任者的遗密档案库。系统通过模拟命令行交互（CLI），带领用户深入探索这位世界级侦探留下的思想碎片与未竟之作。
-### 📟 系统功能 (Core Features)
+一个基于《死亡笔记》的沉浸式终端交互项目。模拟 L 死后遗留的加密档案系统，以命令行形式呈现他未曾公开的思考、未寄出的信、对案件的分析、以及关于人性的哲学碎片。
 
-    沉浸式终端体验：采用 1.5rem 以上的高清黑客风大字体，适配 CRT 扫描线质感。
+## 🎯 在线体验
 
-    模拟 CLI 交互：支持 ls (列出目录)、cd (切换路径)、read (读取档案) 等基础指令。
+[https://nanamiapril.github.io/l-system/](https://nanamiapril.github.io/l-system/)
 
-    双语档案系统：档案内容支持英中双语对照展示，采用亮白色与神秘紫的视觉区分。
+## ✨ 特色
 
-    响应式设计：完美适配宽屏显示器与移动端设备，确保在任何终端都能获得一致的情报阅读体验。
+- **终端沉浸体验** — CRT 扫描线 + ASCII Logo + 打字机动画 + 开机序列
+- **四大档案模块** — Drafts / Logs / Analysis / Philosophy
+- **双语内容** — 英文原文 + 中文翻译，打字机逐字呈现
+- **隐藏命令** — `who`、`date`、`exit`、`sudo`、`random`、`kira`
+- **移动端适配** — 手机浏览器直接打开，输入区固定底部
+- **纯前端** — 零依赖、零后端，双击 index.html 即可运行
 
-### 🛠️ 快速开始 (Usage)
+## 🛠 技术栈
 
-你可以直接通过以下链接访问系统（如果你已部署 GitHub Pages）：
-🔗 [你的 GitHub Pages 链接]
-#### 常用指令清单：
+- 纯 HTML / CSS / JavaScript
+- CSS 伪元素（CRT 扫描线 + 屏幕微光）
+- async/await 打字机动画（textContent 性能优化版）
 
-    输入 ls：查看当前目录下的档案文件夹。
+## 📁 项目结构
 
-    输入 cd [文件夹名]：进入特定目录（如 cd drafts）。
+```
+L_System/
+├── index.html      主页面 + 交互逻辑
+├── style.css       终端视觉风格（CRT 美学）
+├── README.md
+└── db/
+    ├── drafts.js       未寄出信笺（5篇）
+    ├── logs.js         观察日志（5篇）
+    ├── analysis.js     对月的判断（5篇）
+    └── philosophy.js   对人的记录（5篇）
+```
 
-    输入 read [档案编号]：解密并阅读特定档案（如 read D-001）。
+## 🚀 使用方式
 
-    输入 help：获取系统指令指引。
+双击 `index.html` 或部署到任意静态托管服务。
 
-### 📁 目录架构 (Project Structure)
-Plaintext
+**基本命令：**
 
-/wammys-registry
-├── index.html      # 系统核心逻辑与终端容器
-├── style.css       # 严格对齐的 UI 样式表 (v5.3.2)
-├── db/             # 核心数据库文件 (.js/.json)
-│   └── files.js    # 存储所有解密档案内容
-└── README.md       # 本说明文件
+| 命令 | 说明 |
+|------|------|
+| `ls` | 列出所有目录 |
+| `cd [folder]` | 进入目录，查看文件列表 |
+| `read [ID]` | 解密并阅读指定文件 |
+| `random` | 随机解密一篇档案 |
+| `help` | 显示所有可用命令 |
+| `clear` | 清屏 |
 
-### 📝 开发者备注 (Developer Notes)
+## 📖 内容模块
 
-本系统是为了致敬而建立的纯前端交互项目。为了保证最佳的截图效果和沉浸感，建议使用 Chrome 浏览器并在全屏模式下运行。
+| 模块 | 调性 | 篇数 |
+|------|------|------|
+| Drafts | 克制的情感、未寄出的告白 | 5 |
+| Logs | 冰冷的行为观察、微表情分析 | 5 |
+| Analysis | 博弈思维、对对手的逻辑解构 | 5 |
+| Philosophy | 存在主义、对秩序与自由的思辨 | 5 |
+
+## 📝 License
+
+MIT
